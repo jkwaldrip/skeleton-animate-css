@@ -9,7 +9,7 @@ var cleanCSS = require('gulp-clean-css');
 
 // CSS Stuff
 gulp.task('minify-css', function() {
-  return gulp.src(['css/normalize.css','css/skeleton.css','css/main.css'])
+  return gulp.src(['css/normalize.css','css/skeleton.css','css/animate.css','css/main.css'])
     .pipe(concat('css/all.css'))
     .pipe(gulp.dest('./'))
     .pipe(cleanCSS({compatibility: 'ie8'}))
