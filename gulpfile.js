@@ -38,6 +38,6 @@ gulp.task('js',['lint-js','minify-js']);
 gulp.task('default',['css','js']);
 
 gulp.task('watch', function() {
-  gulp.watch('js/main.js','js');
-  gulp.watch('css/main.css','css')
+  gulp.watch('js/main.js',['js']);
+  gulp.watch('css/main.css',['css']);
 });
